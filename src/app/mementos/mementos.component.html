@@ -1,0 +1,18 @@
+<div class="container-fluid">
+	<div class="p-5">
+		<section id="hero">
+			<h1><strong>MEMENTOS.</strong></h1>
+			<p>Because a picture is worth a thousand likes on Facebook.</p>
+		</section>
+		<section id="photos">
+			<div class="row">
+				<div class="col-4" *ngFor="let photo of photos">
+					<figure class="figure">
+	  					<img [src]="photo.src" class="figure-img img-fluid border">
+	  					<figcaption class="figure-caption text-right">{{photo.cap}}</figcaption>
+					</figure>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
